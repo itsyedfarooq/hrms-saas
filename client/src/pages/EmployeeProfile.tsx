@@ -23,7 +23,7 @@ function EmployeeProfile() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          `http://localhost:5000/api/employees/${id}`,
+          `https://hrms-saas-vjp5.onrender.com/api/employees/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

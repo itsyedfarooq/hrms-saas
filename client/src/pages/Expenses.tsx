@@ -23,7 +23,7 @@ function Expenses() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/expenses",
+          "https://hrms-saas-vjp5.onrender.com/api/expenses",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -63,8 +63,8 @@ function Expenses() {
 
       const url =
         editingId !== null
-          ? `http://localhost:5000/api/expenses/${editingId}`
-          : "http://localhost:5000/api/expenses";
+          ? `https://hrms-saas-vjp5.onrender.com/api/expenses/${editingId}`
+          : "https://hrms-saas-vjp5.onrender.com/api/expenses";
 
       const response = await fetch(url, {
         method: editingId !== null ? "PUT" : "POST",
@@ -122,7 +122,7 @@ function Expenses() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/expenses/${id}`,
+        `https://hrms-saas-vjp5.onrender.com/api/expenses/${id}`,
         {
           method: "DELETE",
           headers: {

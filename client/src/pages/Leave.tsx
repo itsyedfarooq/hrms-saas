@@ -22,7 +22,7 @@ function Leave() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/leaves",
+          "https://hrms-saas-vjp5.onrender.com/api/leaves",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -63,8 +63,8 @@ function Leave() {
 
       const url =
         editingId !== null
-          ? `http://localhost:5000/api/leaves/${editingId}`
-          : "http://localhost:5000/api/leaves";
+          ? `https://hrms-saas-vjp5.onrender.com/api/leaves/${editingId}`
+          : "https://hrms-saas-vjp5.onrender.com/api/leaves";
 
       const response = await fetch(url, {
         method: editingId !== null ? "PUT" : "POST",
@@ -121,7 +121,7 @@ function Leave() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/leaves/${id}`,
+        `https://hrms-saas-vjp5.onrender.com/api/leaves/${id}`,
         {
           method: "DELETE",
           headers: {

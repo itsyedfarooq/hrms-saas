@@ -22,7 +22,7 @@ function Attendance() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/attendances",
+          "https://hrms-saas-vjp5.onrender.com/api/attendances",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -64,8 +64,8 @@ function Attendance() {
 
       const url =
         editingId !== null
-          ? `http://localhost:5000/api/attendances/${editingId}`
-          : "http://localhost:5000/api/attendances";
+          ? `https://hrms-saas-vjp5.onrender.com/api/attendances/${editingId}`
+          : "https://hrms-saas-vjp5.onrender.com/api/attendances";
 
       const response = await fetch(url, {
         method: editingId !== null ? "PUT" : "POST",
@@ -122,7 +122,7 @@ function Attendance() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/attendances/${id}`,
+        `https://hrms-saas-vjp5.onrender.com/api/attendances/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -41,7 +41,7 @@ if (Number(salary) <= 0) {
     // EDIT EMPLOYEE
     if (editingId !== null) {
       const response = await fetch(
-        `http://localhost:5000/api/employees/${editingId}`,
+        `https://hrms-saas-vjp5.onrender.com/api/employees/${editingId}`,
         {
           method: "PUT",
           headers: {
@@ -78,7 +78,7 @@ if (Number(salary) <= 0) {
     // ADD EMPLOYEE
     else {
       const response = await fetch(
-        "http://localhost:5000/api/employees",
+        "https://hrms-saas-vjp5.onrender.com/api/employees",
         {
           method: "POST",
           headers: {
@@ -129,7 +129,7 @@ const handleDeleteEmployee = async (id: number) => {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:5000/api/employees/${id}`,
+      `https://hrms-saas-vjp5.onrender.com/api/employees/${id}`,
       {
         method: "DELETE",
         headers: {

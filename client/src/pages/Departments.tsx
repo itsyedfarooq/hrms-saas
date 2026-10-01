@@ -20,7 +20,7 @@ function Departments() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/departments",
+          "https://hrms-saas-vjp5.onrender.com/api/departments",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ const handleSaveDepartment = async () => {
     // UPDATE existing department
     if (editingId !== null) {
       const response = await fetch(
-        `http://localhost:5000/api/departments/${editingId}`,
+        `https://hrms-saas-vjp5.onrender.com/api/departments/${editingId}`,
         {
           method: "PUT",
           headers: {
@@ -100,7 +100,7 @@ const handleSaveDepartment = async () => {
     // CREATE new department
     else {
       const response = await fetch(
-        "http://localhost:5000/api/departments",
+        "https://hrms-saas-vjp5.onrender.com/api/departments",
         {
           method: "POST",
           headers: {
@@ -156,7 +156,7 @@ const handleSaveDepartment = async () => {
     }
 
     const response = await fetch(
-      `http://localhost:5000/api/departments/${id}`,
+      `https://hrms-saas-vjp5.onrender.com/api/departments/${id}`,
       {
         method: "DELETE",
         headers: {

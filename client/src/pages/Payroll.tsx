@@ -24,7 +24,7 @@ useEffect(() => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/payrolls",
+        "https://hrms-saas-vjp5.onrender.com/api/payrolls",
         {
           method: "GET",
           headers: {
@@ -68,8 +68,8 @@ const handleSavePayroll = async () => {
 
     const url =
       editingId !== null
-        ? `http://localhost:5000/api/payrolls/${editingId}`
-        : "http://localhost:5000/api/payrolls";
+        ? `https://hrms-saas-vjp5.onrender.com/api/payrolls/${editingId}`
+        : "https://hrms-saas-vjp5.onrender.com/api/payrolls";
 
     const response = await fetch(url, {
       method: editingId !== null ? "PUT" : "POST",
@@ -126,7 +126,7 @@ const handleDeletePayroll = async (id: number) => {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:5000/api/payrolls/${id}`,
+      `https://hrms-saas-vjp5.onrender.com/api/payrolls/${id}`,
       {
         method: "DELETE",
         headers: {

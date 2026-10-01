@@ -96,7 +96,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/employees",
+          "https://hrms-saas-vjp5.onrender.com/api/employees",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/departments",
+          "https://hrms-saas-vjp5.onrender.com/api/departments",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -156,7 +156,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/payrolls",
+          "https://hrms-saas-vjp5.onrender.com/api/payrolls",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -186,7 +186,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/attendances",
+          "https://hrms-saas-vjp5.onrender.com/api/attendances",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -216,7 +216,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/leaves",
+          "https://hrms-saas-vjp5.onrender.com/api/leaves",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -246,7 +246,7 @@ export const AppProvider = ({ children }: Props) => {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/expenses",
+          "https://hrms-saas-vjp5.onrender.com/api/expenses",
           {
             headers: {
               Authorization: `Bearer ${token}`,
